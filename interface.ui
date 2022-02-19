@@ -1,0 +1,438 @@
+<?xml version='1.0' encoding='utf-8'?>
+<interface version="1.0">
+  <object class="tk.Toplevel" id="mainwindow">
+    <property name="geometry">800x400</property>
+    <property name="height">200</property>
+    <property name="iconphoto">star.png</property>
+    <property name="relief">flat</property>
+    <property name="resizable">none</property>
+    <property name="title" translatable="yes">Moving with Constant Acceleration</property>
+    <property name="width">200</property>
+    <child>
+      <object class="tk.Frame" id="frame_1">
+        <property name="cursor">based_arrow_down</property>
+        <property name="height">400</property>
+        <property name="takefocus">false</property>
+        <property name="width">800</property>
+        <layout manager="pack">
+          <property name="expand">true</property>
+          <property name="fill">both</property>
+          <property name="propagate">True</property>
+          <property name="side">top</property>
+        </layout>
+        <child>
+          <object class="tk.Entry" id="x_0">
+            <property name="background">white</property>
+            <property name="cursor">no</property>
+            <property name="foreground">black</property>
+            <property name="readonlybackground">white</property>
+            <property name="state">normal</property>
+            <property name="text" translatable="yes">0.0</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relwidth">.096</property>
+              <property name="relx">.78</property>
+              <property name="rely">.1</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="x_m">
+            <property name="background">white</property>
+            <property name="cursor">no</property>
+            <property name="foreground">black</property>
+            <property name="readonlybackground">white</property>
+            <property name="state">normal</property>
+            <property name="text" translatable="yes">0.0</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relwidth">.096</property>
+              <property name="relx">.89</property>
+              <property name="rely">.1</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="y_m">
+            <property name="background">white</property>
+            <property name="cursor">no</property>
+            <property name="foreground">black</property>
+            <property name="readonlybackground">white</property>
+            <property name="state">normal</property>
+            <property name="text" translatable="yes">0.0</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relwidth">0.096</property>
+              <property name="relx">.89</property>
+              <property name="rely">.18</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="ux0">
+            <property name="background">white</property>
+            <property name="cursor">no</property>
+            <property name="foreground">black</property>
+            <property name="readonlybackground">white</property>
+            <property name="state">normal</property>
+            <property name="text" translatable="yes">0.0</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relwidth">.096</property>
+              <property name="relx">.78</property>
+              <property name="rely">.26</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="uxm">
+            <property name="background">white</property>
+            <property name="cursor">no</property>
+            <property name="foreground">black</property>
+            <property name="readonlybackground">white</property>
+            <property name="state">normal</property>
+            <property name="text" translatable="yes">0.0</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relwidth">.096</property>
+              <property name="relx">.89</property>
+              <property name="rely">.26</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="uy0">
+            <property name="background">white</property>
+            <property name="cursor">no</property>
+            <property name="foreground">black</property>
+            <property name="readonlybackground">white</property>
+            <property name="state">normal</property>
+            <property name="text" translatable="yes">0.0</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relwidth">.096</property>
+              <property name="relx">.78</property>
+              <property name="rely">.34</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="uym">
+            <property name="background">white</property>
+            <property name="cursor">no</property>
+            <property name="foreground">black</property>
+            <property name="readonlybackground">white</property>
+            <property name="state">normal</property>
+            <property name="text" translatable="yes">0.0</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relwidth">.096</property>
+              <property name="relx">.89</property>
+              <property name="rely">.34</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="alpha">
+            <property name="background">white</property>
+            <property name="cursor">no</property>
+            <property name="foreground">black</property>
+            <property name="readonlybackground">white</property>
+            <property name="state">normal</property>
+            <property name="text" translatable="yes">0.0</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relwidth">.096</property>
+              <property name="relx">.89</property>
+              <property name="rely">.42</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="u_m">
+            <property name="background">white</property>
+            <property name="cursor">no</property>
+            <property name="foreground">black</property>
+            <property name="readonlybackground">white</property>
+            <property name="state">normal</property>
+            <property name="text" translatable="yes">0.0</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relwidth">.096</property>
+              <property name="relx">.89</property>
+              <property name="rely">.5</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="t0">
+            <property name="background">white</property>
+            <property name="cursor">no</property>
+            <property name="font">TkCaptionFont</property>
+            <property name="foreground">black</property>
+            <property name="readonlybackground">white</property>
+            <property name="state">normal</property>
+            <property name="text" translatable="yes">0.0</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relwidth">.096</property>
+              <property name="relx">.78</property>
+              <property name="rely">.58</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Entry" id="tm">
+            <property name="background">white</property>
+            <property name="cursor">no</property>
+            <property name="foreground">black</property>
+            <property name="state">normal</property>
+            <property name="text" translatable="yes">0.0</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relwidth">.096</property>
+              <property name="relx">.89</property>
+              <property name="rely">.58</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Spinbox" id="y0m">
+            <property name="background">white</property>
+            <property name="buttonbackground">grey</property>
+            <property name="foreground">black</property>
+            <property name="textvariable">int:spinvar1</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relwidth">.096</property>
+              <property name="relx">.78</property>
+              <property name="rely">.18</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Spinbox" id="alpha0">
+            <property name="background">white</property>
+            <property name="buttonbackground">grey</property>
+            <property name="foreground">black</property>
+            <property name="textvariable">int:spinvar2</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relwidth">.096</property>
+              <property name="relx">.78</property>
+              <property name="rely">.42</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Spinbox" id="u0">
+            <property name="background">white</property>
+            <property name="buttonbackground">grey</property>
+            <property name="foreground">black</property>
+            <property name="textvariable">int:spinvar3</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relwidth">.096</property>
+              <property name="relx">.78</property>
+              <property name="rely">.5</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="button_1">
+            <property name="command">on_animate_click</property>
+            <property name="cursor">arrow</property>
+            <property name="text" translatable="yes">play</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">.87</property>
+              <property name="rely">.7</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="button_2">
+            <property name="relief">flat</property>
+            <property name="text" translatable="yes">&lt;&lt;</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">.83</property>
+              <property name="rely">.7</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Button" id="button_3">
+            <property name="text" translatable="yes">button_3</property>
+            <layout manager="pack">
+              <property name="propagate">True</property>
+              <property name="side">top</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="ttk.Frame" id="frame_3">
+            <property name="height">250</property>
+            <property name="width">200</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="height">50</property>
+              <property name="relheight">.97</property>
+              <property name="relwidth">.57</property>
+              <property name="width">115</property>
+              <property name="y">-35</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="current">
+            <property name="font">TkDefaultFont</property>
+            <property name="text" translatable="yes">Current</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relheight">.05</property>
+              <property name="relwidth">.1</property>
+              <property name="relx">.89</property>
+              <property name="rely">.05</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="primary">
+            <property name="anchor">w</property>
+            <property name="justify">left</property>
+            <property name="text" translatable="yes">    Primary</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relheight">.05</property>
+              <property name="relwidth">.1</property>
+              <property name="relx">.78</property>
+              <property name="rely">.05</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="y">
+            <property name="text" translatable="yes">y, m</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">.73</property>
+              <property name="rely">.18</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="ux">
+            <property name="text" translatable="yes">ux, m/s</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">.72</property>
+              <property name="rely">.26</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="uy">
+            <property name="text" translatable="yes">uy, m/s</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">.72</property>
+              <property name="rely">.34</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="a">
+            <property name="text" translatable="yes">a, °</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">.74</property>
+              <property name="rely">.42</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="u">
+            <property name="text" translatable="yes">u, m/s</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">.72</property>
+              <property name="rely">.5</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="t">
+            <property name="text" translatable="yes">t, s</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">.73</property>
+              <property name="rely">.58</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+        <child>
+          <object class="tk.Label" id="x">
+            <property name="justify">left</property>
+            <property name="text" translatable="yes">x, m</property>
+            <layout manager="place">
+              <property name="anchor">nw</property>
+              <property name="relx">.73</property>
+              <property name="rely">.1</property>
+              <property name="x">0</property>
+              <property name="y">0</property>
+            </layout>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
